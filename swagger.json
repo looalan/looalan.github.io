@@ -4,8 +4,10 @@
     "description" : "EEI Trusted Network Platform",
     "version" : "2.0",
     "title" : "Trusted Network Platform",
-    "contact" : {},
-    "license": {}
+    "contact" : {
+      "name" : "Enterprise Engineering Inc.",
+      "url" : "http://www.joineei.com"
+    }
   },
   "host" : "qa-services.1fsapi.com",
   "basePath" : "/platform/trustednetwork",
@@ -529,7 +531,12 @@
         "operationId" : "cancelPayment",
         "consumes" : [ "application/xml", "application/json" ],
         "produces" : [ "application/xml", "application/json" ],
-        "parameters" : [{
+        "parameters" : [ {
+          "name" : "custid",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        }, {
           "name" : "acctid",
           "in" : "path",
           "required" : true,
@@ -583,7 +590,12 @@
         "operationId" : "modifyPayment",
         "consumes" : [ "application/xml", "application/json" ],
         "produces" : [ "application/xml", "application/json" ],
-        "parameters" : [  {
+        "parameters" : [ {
+          "name" : "custid",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        }, {
           "name" : "acctid",
           "in" : "path",
           "required" : true,
@@ -740,6 +752,48 @@
             "schema" : {
               "$ref" : "#/definitions/PaymentInquiryResponse"
             }
+          }
+        }
+      }
+    },
+    "/fs-api/fi/{fiDirId}/profile" : {
+      "post" : {
+        "tags" : [ "1. Financial Institution Services" ],
+        "summary" : "Gets the Financial Institution Profile Capability.",
+        "description" : "This information includes general properties such as account types supported, user password requirements, specific messages supported, and how the client should batch requests and where to send the requests.<br><br><input class='submit' type='submit' value='Fill in and try it out!' onclick='doFillInFIprofile();'>",
+        "operationId" : "getProfile",
+        "produces" : [ "application/json", "application/xml" ],
+        "parameters" : [ {
+          "name" : "CorrelationID",
+          "in" : "header",
+          "description" : "The FS-API client uses the correlationId request header to inform the server of an interaction tracing identifier. The server echoes the same correlationId in the response header to inform the FS-API client of the tracking id.",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "fiDirId",
+          "in" : "path",
+          "description" : "The FI Directory Id.",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/ProfileResponse"
+            },
+            "headers" : {
+              "CorrelationID" : {
+                "type" : "string",
+                "description" : "The FS-API client uses the correlationId request header to inform the server of an interaction tracing identifier. The server echoes the same correlationId in the response header to inform the FS-API client of the tracking id."
+              }
+            }
+          },
+          "400" : {
+            "description" : "Not Found. Usually happens when the resource requested was not found, i.e. Profile not found or inactive."
+          },
+          "500" : {
+            "description" : "The call to the FS-API service failed."
           }
         }
       }
@@ -2151,48 +2205,6 @@
                 "description" : "See description above (response code 200)."
               }
             }
-          }
-        }
-      }
-    },
-     "/fs-api/fi/{fiDirId}/profile" : {
-      "post" : {
-        "tags" : [ "1. Financial Institution Services" ],
-        "summary" : "Gets the Financial Institution Profile Capability.",
-        "description" : "This information includes general properties such as account types supported, user password requirements, specific messages supported, and how the client should batch requests and where to send the requests.<br><br><input class='submit' type='submit' value='Fill in and try it out!' onclick='doFillInFIprofile();'>",
-        "operationId" : "getProfile",
-        "produces" : [ "application/json", "application/xml" ],
-        "parameters" : [ {
-          "name" : "fiDirId",
-          "in" : "path",
-          "description" : "The FI Directory Id.",
-          "required" : true,
-          "type" : "string"
-        }, {
-          "name" : "CorrelationID",
-          "in" : "header",
-          "description" : "The FS-API client uses the correlationId request header to inform the server of an interaction tracing identifier. The server echoes the same correlationId in the response header to inform the FS-API client of the tracking id.",
-          "required" : false,
-          "type" : "string"
-        }],
-        "responses" : {
-          "200" : {
-            "description" : "successful operation",
-            "schema" : {
-              "$ref" : "#/definitions/ProfileResponse"
-            },
-            "headers" : {
-              "CorrelationID" : {
-                "type" : "string",
-                "description" : "The FS-API client uses the correlationId request header to inform the server of an interaction tracing identifier. The server echoes the same correlationId in the response header to inform the FS-API client of the tracking id."
-              }
-            }
-          },
-          "400" : {
-            "description" : "Not Found. Usually happens when the resource requested was not found, i.e. Profile not found or inactive."
-          },
-          "500" : {
-            "description" : "The call to the FS-API service failed."
           }
         }
       }
@@ -6020,7 +6032,9 @@
           "type" : "string",
           "description" : "Data to be echoed in the transaction response."
         },
-        
+        "PROFRS" : {
+          "$ref" : "#/definitions/ProfileResponse"
+        }
       }
     },
     "ImageData" : {
