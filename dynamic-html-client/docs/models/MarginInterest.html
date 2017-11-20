@@ -1,0 +1,35 @@
+
+<h2>MarginInterest</h2>
+<ul class="parameter">
+  <li class="param-required-false">INVTRAN : InvestmentTransaction
+    <br/>Investment transaction aggregate.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">TOTAL : String
+    <br/>Transaction total.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">SUBACCTFUND : String
+    <br/>Where did the money for the transaction come from or go to? CASH, MARGIN, SHORT, OTHER.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>CASH</dd>
+            <dd>MARGIN</dd>
+            <dd>SHORT</dd>
+            <dd>OTHER</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">CURRENCY : Currency
+    <br/>Currency information if different from default currency.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">ORIGCURRENCY : Currency
+    <br/>Details of the foreign currency.
+  </li>
+</ul>

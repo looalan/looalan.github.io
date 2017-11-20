@@ -1,0 +1,28 @@
+{
+  "input": "./swagger2.json",
+  "output": "./doc.html",
+  "format": "singlefile",
+  "customCSS": "h1.grey-text.text-darken-3{color: #6f6f6f !important; font-family: 'Raleway',sans-serif; font-size: 27px; font-weight: 800; margin:0; text-align: center; font-family: 'IM Fell Great Primer'; position: relative;}h1:after{content:url(./fs.png);position: absolute;",
+  "markdown": true,
+  "theme": {
+    "default": "blue",
+    "GET": "blue",
+    "POST": "indigo",
+    "DELETE": "red",
+    "PUT": "amber"
+  },
+  "fixedNav": true,
+  "autoTags": true,
+  "indent": 2,
+  "collapse":{
+    "path":true
+    ,"method":false
+    ,"tool":false
+  },
+  "home":{
+      "URL": "http://www.joineei.com/apidocs/fsapidoc"
+      ,"location": "RL"
+      ,"text": "Info"
+  }
+ 
+}

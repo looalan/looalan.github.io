@@ -1,0 +1,53 @@
+
+<h2>InvestmentAccountInfo</h2>
+<ul class="parameter">
+  <li class="param-required-false">INVACCTFROM : InvestmentAccount
+    <br/>Account at FI.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">USPRODUCTTYPE : String
+    <br/>Classification of account.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">CHECKING : String
+    <br/>Whether the account has check writing privileges.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>Y</dd>
+            <dd>N</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">SVCSTATUS : String
+    <br/>Activation status for investment statement download for the account. ACTIVE (signed up), PEND (in the process of signing up), AVAIL (have not signed up).
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>AVAIL</dd>
+            <dd>PEND</dd>
+            <dd>ACTIVE</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">INVACCTTYPE : String
+    <br/>Type of account.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>INDIVIDUAL</dd>
+            <dd>JOINT</dd>
+            <dd>TRUST</dd>
+            <dd>CORPORATE</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">OPTIONLEVEL : String
+    <br/>Text description of option trading privileges.
+  </li>
+</ul>

@@ -1,0 +1,32 @@
+
+<h2>MatchInfo</h2>
+<ul class="parameter">
+  <li class="param-required-false">MATCHPCT : String
+    <br/>Percent of employee contribution matched.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">MAXMATCHAMT : String
+    <br/>Maximum employer contribution amount in any year.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">MAXMATCHPCT : String
+    <br/>Current maximum employer contribution percentage. Maximum match in a year is MAXMATCHPCT up to the MAXMATCHAMT, if provided.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">STARTOFYEAR : String
+    <br/>Specifies when the employer contribution max is reset. Some plans have a maximum based on the company fiscal year rather than calendar year. Assume calendar year if omitted. Only the month and day (MMDD) are used; year (YYYY) and time are ignored.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">BASEMATCHAMT : String
+    <br/>Specifies a fixed dollar amount contributed by the employer if the employee participates in the plan at all. This may be present in addition to the &lt;MATCHPCT&gt;. $0 if omitted.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">BASEMATCHPCT : String
+    <br/>Specifies a fixed percent of employee salary matched if the employee participates in the plan at all. This may be present in addition to the MATCHPCT&gt;. 0% if omitted. Base match in a year is BASEMATCHPCT up to the BASEMATCHAMT,if provided.
+  </li>
+</ul>

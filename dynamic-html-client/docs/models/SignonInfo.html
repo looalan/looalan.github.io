@@ -1,0 +1,149 @@
+
+<h2>SignonInfo</h2>
+<ul class="parameter">
+  <li class="param-required-false">SIGNONREALM : String
+    <br/>Identifies this realm,.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">MIN : String
+    <br/>Minimum number of password characters.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">MAX : String
+    <br/>Maximum number of password characters.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">CHARTYPE : String
+    <br/>Type of characters allowed in password.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>ALPHAONLY</dd>
+            <dd>NUMERICONLY</dd>
+            <dd>ALPHAORNUMERIC</dd>
+            <dd>ALPHAANDNUMERIC</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">CASESEN : String
+    <br/>Is password case-sensitive.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>Y</dd>
+            <dd>N</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">SPECIAL : String
+    <br/>Are special characters allowed over and above those characters allowed by &lt;CHARTYPE&gt; and &lt;SPACES&gt;.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>Y</dd>
+            <dd>N</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">SPACES : String
+    <br/>Are spaces allowed over and above those characters allowed by &lt;CHARTYPE&gt; and &lt;SPECIAL&gt;.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>Y</dd>
+            <dd>N</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">PINCH : String
+    <br/>Does server supports &lt;PINCHRQ&gt; (PIN change requests).
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>Y</dd>
+            <dd>N</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">CHGPINFIRST : String
+    <br/>Server requires clients to change USERPASS as part of first signon.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>Y</dd>
+            <dd>N</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">USERCRED1LABEL : String
+    <br/>Text prompt for user credential.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">USERCRED2LABEL : String
+    <br/>Text prompt for user credential.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">CLIENTUIDREQ : String
+    <br/>Is CLIENTUID required.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>Y</dd>
+            <dd>N</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">AUTHTOKENFIRST : String
+    <br/>Does server require client to send AUTHTOKEN as part of the first signon.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>Y</dd>
+            <dd>N</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">AUTHTOKENLABEL : String
+    <br/>Text label for the AUTHTOKEN.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">AUTHTOKENINFOURL : String
+    <br/>URL where AUTHTOKEN information is provided by the institution operating the OFX server.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">MFACHALLENGESUPT : String
+    <br/>Does server supports MFACHALLENGE functionality.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>Y</dd>
+            <dd>N</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">MFACHALLENGEFIRST : String
+    <br/>Is client is required to send MFACHALLENGERQ as part of the first signon, before sending any other requests.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>Y</dd>
+            <dd>N</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>

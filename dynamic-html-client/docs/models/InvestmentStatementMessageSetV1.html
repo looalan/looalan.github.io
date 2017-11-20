@@ -1,0 +1,89 @@
+
+<h2>InvestmentStatementMessageSetV1</h2>
+<ul class="parameter">
+  <li class="param-required-false">MSGSETCORE : MessageSetCore
+    <br/>Message set code aggregate.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">TRANDNLD : String
+    <br/>Whether the FI server downloads investment statement transactions.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>Y</dd>
+            <dd>N</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">OODNLD : String
+    <br/>Whether the FI server downloads investment open orders.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>Y</dd>
+            <dd>N</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">POSDNLD : String
+    <br/>Whether the FI server downloads investment statement positions.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>Y</dd>
+            <dd>N</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">BALDNLD : String
+    <br/>Whether the FI server downloads investment balances.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>Y</dd>
+            <dd>N</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">CANEMAIL : String
+    <br/>Whether the FI supports investment e-mail. Use generic e-mail profile to specify whether generic e-mail is supported.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>Y</dd>
+            <dd>N</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">INV401KDNLD : String
+    <br/>Whether the FI server downloads 401(k) account information.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>Y</dd>
+            <dd>N</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">CLOSINGAVAIL : String
+    <br/>Closing statement information available. If ’N’ or not present, do not sent &lt;INVSTMTENDRQ&gt; to server.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>Y</dd>
+            <dd>N</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">IMAGEPROF : ImageProfile
+    <br/>Image profile (if supported).
+  </li>
+</ul>

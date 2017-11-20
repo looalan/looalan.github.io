@@ -1,0 +1,69 @@
+
+<h2>InvestmentExpense</h2>
+<ul class="parameter">
+  <li class="param-required-false">INVTRAN : InvestmentTransaction
+    <br/>Investment transaction aggregate.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">SECID : SecurityId
+    <br/>Security identifier.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">TOTAL : String
+    <br/>Transaction total.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">SUBACCTSEC : String
+    <br/>Sub-account type for the security: CASH, MARGIN, SHORT, OTHER.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>CASH</dd>
+            <dd>MARGIN</dd>
+            <dd>SHORT</dd>
+            <dd>OTHER</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">SUBACCTFUND : String
+    <br/>Where did the money for the transaction come from or go to? CASH, MARGIN, SHORT, OTHER.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>CASH</dd>
+            <dd>MARGIN</dd>
+            <dd>SHORT</dd>
+            <dd>OTHER</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">CURRENCY : Currency
+    <br/>Overriding currency aggregate for unit price.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">ORIGCURRENCY : Currency
+    <br/>Details of the foreign currency.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">INV401KSOURCE : String
+    <br/>For 401(k) accounts, source of money used for this security.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>PRETAX</dd>
+            <dd>AFTERTAX</dd>
+            <dd>MATCH</dd>
+            <dd>PROFITSHARING</dd>
+            <dd>ROLLOVER</dd>
+            <dd>OTHERVEST</dd>
+            <dd>OTHERNONVEST</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>

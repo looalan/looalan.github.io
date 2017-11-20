@@ -1,0 +1,67 @@
+
+<h2>Investment401K</h2>
+<ul class="parameter">
+  <li class="param-required-false">EMPLOYERNAME : String
+    <br/>Name of the employer.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">PLANID : String
+    <br/>Plan number.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">PLANJOINDATE : String
+    <br/>Date the employee joined the plan.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">EMPLOYERCONTACTINFO : String
+    <br/>Name of contact person at employer, plus any available contact information, such as phone number.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">BROKERCONTACTINFO : String
+    <br/>Name of contact person at broker, plus any available contact information, such as phone number.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">DEFERPCTPRETAX : String
+    <br/>Percent of employee salary deferred before tax.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">DEFERPCTAFTERTAX : String
+    <br/>Percent of employee salary deferred after tax.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">MATCHINFO : MatchInfo
+    <br/>Aggregate containing employer match information. Absent if employer does not contribute matching funds.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">CONTRIBINFO : ContributionInfo
+    <br/>Aggregate to describe how new contributions are distributed among the available securities.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">CURRENTVESTPCT : String
+    <br/>Estimated percentage of employer contributions vested as of the current date. If omitted, assume 100%.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">VESTINFO : List
+    <br/>Vest change dates. Provides the vesting percentage as of any particular past, current, or future date. 0 or more.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">LOANINFO : List
+    <br/>List of loans outstanding against this account. 0 or more.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">INV401KSUMMARY : Investment401KSummary
+    <br/>List of contributions to 401(k) account.
+  </li>
+</ul>

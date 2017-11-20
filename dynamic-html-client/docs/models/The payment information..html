@@ -1,0 +1,62 @@
+
+<h2>The payment information.</h2>
+<ul class="parameter">
+  <li class="param-required-false">BANKACCTFROM : BankAccount
+    <br/>Account-from aggregate.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">TRNAMT : String
+    <br/>Payment amount.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">PAYEEID : String
+    <br/>Server payee identifier (required if assigned). Either &lt;PAYEEID&gt; or &lt;PAYEE&gt; can be sent, but not both.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">PAYEE : Payee
+    <br/>Complete payee billing information. Either &lt;PAYEEID&gt; or &lt;PAYEE&gt; can be sent, but not both.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">PAYEELSTID : String
+    <br/>Payee list ID (required if assigned).
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">BANKACCTTO : BankAccount
+    <br/>Destination account information for systems that pay by transfers (&lt;PAYEE&gt; also required).
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">EXTDPMT : List
+    <br/>Zero or more extended Payment aggregates.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">PAYACCT : String
+    <br/>User account number with the payee.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">DTDUE : String
+    <br/>Payment due date or the date by which payment must be received by payee.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">MEMO : String
+    <br/>Memo from user to payee.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">BILLREFINFO : String
+    <br/>Biller-supplied reference information when paying a bill, if available.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">BILLPUBINFO : BillPubInfo
+    <br/>Bill publisher information aggregate for the payment.
+  </li>
+</ul>

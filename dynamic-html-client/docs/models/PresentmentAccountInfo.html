@@ -1,0 +1,25 @@
+
+<h2>PresentmentAccountInfo</h2>
+<ul class="parameter">
+  <li class="param-required-false">PRESACCTFROM : PresentmentAccount
+    <br/>Bill presentment account identification. Aggregate that uniquely identifies a customer’s account with a biller by the combination of bill publisher, biller ID, and account number.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">SVCSTATUS : String
+    <br/>Status of the Bill Presentment service for this account. Values are AVAIL, PEND, ACTIVE, or REJECTED.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>AVAIL</dd>
+            <dd>PEND</dd>
+            <dd>ACTIVE</dd>
+            <dd>REJECTED</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">REASON : String
+    <br/>Reason for rejection, relevant only if &lt;SVCSTATUS&gt;REJECTED is specified.
+  </li>
+</ul>

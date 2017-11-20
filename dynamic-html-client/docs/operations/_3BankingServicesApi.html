@@ -1,0 +1,117 @@
+<div class="main-content">
+  <h2><a name=""></a></h2>
+  <p>This is the  API</p>
+
+  <h2><a name="getBankingAccountTransactions"></a>getBankingAccountTransactions</h2>
+  <hr>
+  <p></p>
+  <p>The service queries transactions that are typically part of a regular paper statement. FS-API clients can retrieve the transactions for the specified Checking or Savings account.&lt;br&gt;&lt;br&gt;&lt;input class&#x3D;&#39;submit&#39; type&#x3D;&#39;submit&#39; value&#x3D;&#39;Fill in and try it out!&#39; onclick&#x3D;&#39;doFillInBanking();&#39;&gt;</p>
+  <h3 class="section">URL</h3>
+  <code>https://qa-services.1fsapi.com/platform/trustednetwork/fs-api/fi/{fiDirId}/account/banking</code>
+  <h3 class="section">HTTP Method</h3>
+  <code>POST</code>
+  <h3 class="section">Response Type</h3>
+  <div class="model" data-model="BankResponseMessageSetV1"><a href="">BankResponseMessageSetV1</a></div>
+  <h3 class="section">Parameters</h3>
+  <ul>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">query</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">If not specified the default value is TRANSACTIONS. The following are the expected values: TRANSACTIONS - for transaction history; BALANCEONLY - balance list only; and STATEMENTENDONLY - with statement end.</p>
+	  </li>
+	  <li class="parameter">
+      
+      
+      
+      
+      <span class="param-in">Body: </span>
+      <span class="param-name">body</span>
+      <span class="param-type">UserBankingRequest(UserBankingRequest)</span>
+      
+      <p class="param-description">The request object that will hold the request body with the required request parameters in JSON or XML format.</p>
+	  </li>
+	  <li class="parameter">
+      
+      
+      <span class="param-in">Path: </span>
+      
+      
+      <span class="param-name">fiDirId</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">The FI Directory Id.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">start</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">A client can indicate the date range of transactions. dtStart is the date and time where the service began looking for the transaction history. The date can be an epoch, YYYY-MM-DD or YYYY-MM-DD HH:MM:SS format.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">end</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">A client can indicate the date range of transactions. dtEnd is the date and time where the service ended looking for the transaction history. The date can be an epoch, YYYY-MM-DD or YYYY-MM-DD HH:MM:SS format.</p>
+	  </li>
+	  <li class="parameter">
+      
+      
+      
+      <span class="param-in">Header: </span>
+      
+      <span class="param-name">CorrelationID</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">The FS-API client uses the correlationId request header to inform the server of an interaction tracing identifier. The server echoes the same correlationId in the response header to inform the FS-API client of the tracking id.</p>
+	  </li>
+	  <li class="parameter">
+      
+      
+      
+      <span class="param-in">Header: </span>
+      
+      <span class="param-name">clientId</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">The FS-API client ID that will be used to validate this client.</p>
+	  </li>
+	  <li class="parameter">
+      
+      
+      
+      <span class="param-in">Header: </span>
+      
+      <span class="param-name">clientSecret</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">The FS-API client Secret that will be used together with the Client ID to validate this client.</p>
+	  </li>
+	  <li class="parameter">
+      
+      
+      
+      <span class="param-in">Header: </span>
+      
+      <span class="param-name">Authorization</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">The OAuth Token.</p>
+	  </li>
+  </ul>
+</div>

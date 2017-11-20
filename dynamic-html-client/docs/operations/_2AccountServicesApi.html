@@ -1,0 +1,84 @@
+<div class="main-content">
+  <h2><a name=""></a></h2>
+  <p>This is the  API</p>
+
+  <h2><a name="getAccounts"></a>getAccounts</h2>
+  <hr>
+  <p></p>
+  <p>Gets the accounts owned by a FS-API client&#39;s Customer. These are all the list of accounts (Checking, Savings, Money Market, Credit Card) owned by the Customer.&lt;br&gt;&lt;br&gt;&lt;input class&#x3D;&#39;submit&#39; type&#x3D;&#39;submit&#39; value&#x3D;&#39;Fill in and try it out!&#39; onclick&#x3D;&#39;doFillInAccount();&#39;&gt;</p>
+  <h3 class="section">URL</h3>
+  <code>https://qa-services.1fsapi.com/platform/trustednetwork/fs-api/fi/{fiDirId}/accounts</code>
+  <h3 class="section">HTTP Method</h3>
+  <code>POST</code>
+  <h3 class="section">Response Type</h3>
+  <div class="model" data-model="AccountInfoResponse"><a href="">AccountInfoResponse</a></div>
+  <h3 class="section">Parameters</h3>
+  <ul>
+	  <li class="parameter">
+      
+      
+      <span class="param-in">Path: </span>
+      
+      
+      <span class="param-name">fiDirId</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">The FI Directory Id.</p>
+	  </li>
+	  <li class="parameter">
+      
+      
+      
+      <span class="param-in">Header: </span>
+      
+      <span class="param-name">CorrelationID</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">The FS-API client uses the correlationId request header to inform the server of an interaction tracing identifier. The server echoes the same correlationId in the response header to inform the FS-API client of the tracking id.</p>
+	  </li>
+	  <li class="parameter">
+      
+      
+      
+      <span class="param-in">Header: </span>
+      
+      <span class="param-name">clientId</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">The FS-API client ID that will be used to validate this client.</p>
+	  </li>
+	  <li class="parameter">
+      
+      
+      
+      <span class="param-in">Header: </span>
+      
+      <span class="param-name">clientSecret</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">The FS-API client Secret that will be used together with the Client ID to validate this client.</p>
+	  </li>
+	  <li class="parameter">
+      
+      
+      
+      <span class="param-in">Header: </span>
+      
+      <span class="param-name">Authorization</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">The OAuth Token.</p>
+	  </li>
+	  <li class="parameter">
+      
+      
+      
+      
+      <span class="param-in">Body: </span>
+      <span class="param-name">body</span>
+      <span class="param-type">UserAccountRequest(UserAccountRequest)</span>
+      
+      <p class="param-description">The request object that will hold the request body with the required request parameters in JSON or XML format.</p>
+	  </li>
+  </ul>
+</div>

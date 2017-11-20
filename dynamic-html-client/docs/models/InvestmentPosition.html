@@ -1,0 +1,77 @@
+
+<h2>InvestmentPosition</h2>
+<ul class="parameter">
+  <li class="param-required-false">SECID : SecurityId
+    <br/>Security identifier.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">HELDINACCT : String
+    <br/>Sub-account type.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>CASH</dd>
+            <dd>MARGIN</dd>
+            <dd>SHORT</dd>
+            <dd>OTHER</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">POSTYPE : String
+    <br/>SHORT &#x3D; Writer for options, Short for all others. LONG &#x3D; Holder for options, Long for all others.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>LONG</dd>
+            <dd>SHORT</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">UNITS : String
+    <br/>For stocks, MFs, other, number of shares held.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">UNITPRICE : String
+    <br/>For stocks, MFs, other, price per share.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">MKTVAL : String
+    <br/>Market value of this position.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">DTPRICEASOF : String
+    <br/>Date and time of unit price and market value, and cost basis. If this date is unknown, use 19900101 as the placeholder; do not use 0.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">CURRENCY : Currency
+    <br/>Currency information if different from default currency.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">MEMO : String
+    <br/>Comment.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">INV401KSOURCE : String
+    <br/>Source of money for this security in this position.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>PRETAX</dd>
+            <dd>AFTERTAX</dd>
+            <dd>MATCH</dd>
+            <dd>PROFITSHARING</dd>
+            <dd>ROLLOVER</dd>
+            <dd>OTHERVEST</dd>
+            <dd>OTHERNONVEST</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>

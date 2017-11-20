@@ -1,0 +1,215 @@
+
+<h2>StatementTransaction</h2>
+<ul class="parameter">
+  <li class="param-required-false">TRNTYPE : String
+    <br/>Transaction type.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>CREDIT</dd>
+            <dd>DEBIT</dd>
+            <dd>INT</dd>
+            <dd>DIV</dd>
+            <dd>FEE</dd>
+            <dd>SRVCHG</dd>
+            <dd>DEP</dd>
+            <dd>ATM</dd>
+            <dd>POS</dd>
+            <dd>XFER</dd>
+            <dd>CHECK</dd>
+            <dd>PAYMENT</dd>
+            <dd>CASH</dd>
+            <dd>DIRECTDEP</dd>
+            <dd>DIRECTDEBIT</dd>
+            <dd>REPEATPMT</dd>
+            <dd>OTHER</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">DTPOSTED : String
+    <br/>Date transaction was posted to account.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">DTUSER : String
+    <br/>Date user initiated transaction.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">DTAVAIL : String
+    <br/>Date funds are available (value date).
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">TRNAMT : String
+    <br/>Amount of transaction.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">FITID : String
+    <br/>Transaction ID issued by financial institution.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">CORRECTFITID : String
+    <br/>If present, the FITID of a previously sent transaction that is corrected by this record.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">CORRECTACTION : String
+    <br/>Actions can be REPLACE or DELETE. REPLACE replaces the transaction referenced by CORRECTFITID; DELETE deletes it.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>REPLACE</dd>
+            <dd>DELETE</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">SRVRTID : String
+    <br/>Server assigned transaction ID.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">CHECKNUM : String
+    <br/>Check (or other reference) number.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">REFNUM : String
+    <br/>Reference number that uniquely identifies the transaction.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">SIC : String
+    <br/>Standard Industrial Code.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">PAYEEID : String
+    <br/>Payee identifier if available.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">NAME : String
+    <br/>Name of payee or description of transaction.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">PAYEE : Payee
+    <br/>Payee aggregate.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">EXTDNAME : String
+    <br/>Extended name of payee or description of transaction.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">BANKACCTTO : BankAccount
+    <br/>If this was a transfer to an account and the account information is available.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">CCACCTTO : CreditCardAccount
+    <br/>If this was a transfer to an account and the account information is available.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">MEMO : String
+    <br/>Extra information (not in &lt;NAME&gt;).
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">CURRENCY : Currency
+    <br/>Currency, if different from CURDEF.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">ORIGCURRENCY : Currency
+    <br/>Currency, if different from CURDEF.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">INV401KSOURCE : String
+    <br/>Source of cash for this transaction.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>PRETAX</dd>
+            <dd>AFTERTAX</dd>
+            <dd>MATCH</dd>
+            <dd>PROFITSHARING</dd>
+            <dd>ROLLOVER</dd>
+            <dd>OTHERVEST</dd>
+            <dd>OTHERNONVEST</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">IMAGEDATA : List
+    <br/>Image data aggregate, up to 2 allowed.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">EEI.TRANREF : String
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">EEI.TRANCURRENCY : String
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">EEI.TRANSTATUS : String
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">EEI.TRANVALUEDT : String
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">EEI.TRANADDLINE : String
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">EEI.BANKTRANCODE : String
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">EEI.BANKTRANSUBCODE : String
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">EEI.PROPBANKTRANCODE : String
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">EEI.PROPBANKTRANCODEISSUER : String
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">EEI.DRCRCODE : String
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">EEI.MERCHANTNAME : String
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">EEI.MERCHANTCATCODE : String
+    <br/>
+  </li>
+</ul>

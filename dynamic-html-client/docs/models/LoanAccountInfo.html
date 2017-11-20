@@ -1,0 +1,134 @@
+
+<h2>LoanAccountInfo</h2>
+<ul class="parameter">
+  <li class="param-required-false">LOANACCTFROM : LoanAccount
+    <br/>Loan-account-from aggregate.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">LOANTYPE : String
+    <br/>Type of term.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>FIXED</dd>
+            <dd>REVOLVE</dd>
+            <dd>OPEN</dd>
+            <dd>COMBO</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">LOANINITNUMPMTS : String
+    <br/>Initial number of loan payments.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">LOANINITBAL : String
+    <br/>Initial loan balance.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">LOANFREQ : String
+    <br/>Frequency of payments.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>WEEKLY</dd>
+            <dd>BIWEEKLY</dd>
+            <dd>TWICEMONTHLY</dd>
+            <dd>MONTHLY</dd>
+            <dd>FOURWEEKS</dd>
+            <dd>BIMONTHLY</dd>
+            <dd>QUARTERLY</dd>
+            <dd>SEMIANNUALLY</dd>
+            <dd>ANNUALLY</dd>
+            <dd>MATURITY</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">DTLOANSTART : String
+    <br/>Start date of loan.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">DTLOANMATURITY : String
+    <br/>Expected loan end date.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">PRINBAL : PrincipalBalanceType
+    <br/>Loan Princiapl Balance aggregate.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">BALLOONAMT : String
+    <br/>Not included or zero for regular loans, otherwise Balloon amount.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">LOANINT : LoanInterestType
+    <br/>Loan Interest aggregate.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">LOANIRATE : LoanRateType
+    <br/>Loan Rate aggregate.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">LOANPMT : LoanPaymentAmount
+    <br/>Loan Payment aggregate.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">LOANRMNPMTS : String
+    <br/>Remaining number of loan payments.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">SUPTXDL : String
+    <br/>Y if account supports transaction detail downloads, N if it is balance-only.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>Y</dd>
+            <dd>N</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">XFERSRC : String
+    <br/>Y if account is enabled as a source for an intrabank or interbank transfer.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>Y</dd>
+            <dd>N</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">XFERDEST : String
+    <br/>Y if account is enabled as a destination for an intrabank or interbank transfer.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>Y</dd>
+            <dd>N</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">SVCSTATUS : String
+    <br/>Status of the account.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>AVAIL</dd>
+            <dd>PEND</dd>
+            <dd>ACTIVE</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>

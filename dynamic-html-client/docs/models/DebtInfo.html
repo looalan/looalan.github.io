@@ -1,0 +1,119 @@
+
+<h2>DebtInfo</h2>
+<ul class="parameter">
+  <li class="param-required-false">parvalue : String
+    <br/>Par value.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">debttype : String
+    <br/>Debt type (at most one).
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>COUPON</dd>
+            <dd>ZERO</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">debtclass : String
+    <br/>Classification of debt. TREASURY, MUNICIPAL, CORPORATE, OTHER.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>TREASURY</dd>
+            <dd>MUNICIPAL</dd>
+            <dd>CORPORATE</dd>
+            <dd>OTHER</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">couponrt : String
+    <br/>Bond coupon rate for next closest call date (at most one).
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">dtcoupon : String
+    <br/>Maturity date for next coupon.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">couponfreq : String
+    <br/>When coupons mature. One of the following values: MONTHLY, QUARTERLY, SEMIANNUAL, ANNUAL, or OTHER.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>MONTHLY</dd>
+            <dd>QUARTERLY</dd>
+            <dd>SEMIANNUAL</dd>
+            <dd>ANNUAL</dd>
+            <dd>OTHER</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">callprice : String
+    <br/>Bond call price (at most one).
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">yieldtocall : String
+    <br/>Yield to next call.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">dtcall : String
+    <br/>Next call date (at most one).
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">calltype : String
+    <br/>Type of next call. CALL, PUT, PREFUND, MATURITY.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>CALL</dd>
+            <dd>PUT</dd>
+            <dd>PREFUND</dd>
+            <dd>MATURITY</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">yieldtomat : String
+    <br/>Yield to maturity.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">dtmat : String
+    <br/>Debt maturity date (at most one).
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">assetclass : String
+    <br/>Asset Class (at most one), DOMESTICBOND, INTLBOND, LARGESTOCK SMALLSTOCK, INTLSTOCK, MONEYMRKT, OTHER.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>DOMESTICBOND</dd>
+            <dd>INTLBOND</dd>
+            <dd>LARGESTOCK</dd>
+            <dd>SMALLSTOCK</dd>
+            <dd>INTLSTOCK</dd>
+            <dd>MONEYMRKT</dd>
+            <dd>OTHER</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">fiassetclass : String
+    <br/>Text string containing an FI defined asset class.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">SECINFO : GeneralSecurityInfo
+    <br/>Security information aggregate.
+  </li>
+</ul>

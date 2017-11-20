@@ -1,0 +1,67 @@
+
+<h2>SignonRealm</h2>
+<ul class="parameter">
+  <li class="param-required-false">fidirid : Long
+    <br/>Financial institution directory identification.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">intuitBid : Long
+    <br/>Financial institution business identification.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">characterType : String
+    <br/>Type of characters allowed in password.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">signonRealmName : String
+    <br/>Name of sign on.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">minPasswordLength : Long
+    <br/>Minimum number of password characters.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">maxPasswordLength : Long
+    <br/>Maximum number of password characters.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">caseSensitive : Boolean
+    <br/>Y if password is case-sensitive.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">specialAllowed : Boolean
+    <br/>if special characters are allowed over and above those characters allowed by &lt;CHARTYPE&gt; and &lt;SPACES&gt;.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">spacesAllowed : Boolean
+    <br/>Y if spaces are allowed over and above those characters allowed by &lt;CHARTYPE&gt; and &lt;SPECIAL&gt;.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">pinChangeSupported : Boolean
+    <br/>Y if server supports &lt;PINCHRQ&gt; (PIN change requests).
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">changePinFirst : Boolean
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">passwordType : String
+    <br/>Y if server requires clients to change USERPASS as part of first signon. Clients must ignore &lt;CHGPINFIRST&gt; if the profile indicates &lt;PINCH&gt;N. Note that if &lt;MFACHALLENGEFIRST&gt; is also Y, this pin change request should be sent immediately after the session containing MFACHALLENGE authentication.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">mfasupport : Boolean
+    <br/>True if this financial institution supports Multi-factor authentication.
+  </li>
+</ul>

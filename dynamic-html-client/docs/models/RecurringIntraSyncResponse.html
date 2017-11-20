@@ -1,0 +1,38 @@
+
+<h2>RecurringIntraSyncResponse</h2>
+<ul class="parameter">
+  <li class="param-required-false">TOKEN : String
+    <br/>New synchronization token.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">LOSTSYNC : String
+    <br/>if the token in the synchronization request is older than the earliest entry in the server’s history table. In this case, some responses have been lost. N if the token in the synchronization request is newer than or matches a token in the server’s history table.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>Y</dd>
+            <dd>N</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">BANKACCTFROM : BankAccount
+    <br/>Account-from aggregate.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">CCACCTFROM : CreditCardAccount
+    <br/>Credit-card-account-from aggregate.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">LOANACCTFROM : LoanAccount
+    <br/>Loan-account-from aggregate.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">RECINTRATRNRS : List
+    <br/>Recurring-transfer-response aggregate.
+  </li>
+</ul>

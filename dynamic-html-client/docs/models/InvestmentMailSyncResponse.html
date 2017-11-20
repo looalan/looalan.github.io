@@ -1,0 +1,28 @@
+
+<h2>InvestmentMailSyncResponse</h2>
+<ul class="parameter">
+  <li class="param-required-false">TOKEN : String
+    <br/>New synchronization token.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">LOSTSYNC : String
+    <br/>if the token in the synchronization request is older than the earliest entry in the server’s history table. In this case, some responses have been lost. N if the token in the synchronization request is newer than or matches a token in the server’s history table.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>Y</dd>
+            <dd>N</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">INVACCTFROM : InvestmentAccount
+    <br/>Investment account of interest; token must be interpreted in terms of this account.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">INVMAILTRNRS : List
+    <br/>Investment-mail transactions.
+  </li>
+</ul>

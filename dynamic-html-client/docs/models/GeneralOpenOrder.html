@@ -1,0 +1,105 @@
+
+<h2>GeneralOpenOrder</h2>
+<ul class="parameter">
+  <li class="param-required-false">FITID : String
+    <br/>Unique FI-assigned transaction ID.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">SRVRTID : String
+    <br/>Unique server-assigned transaction ID.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">SECID : SecurityId
+    <br/>Security identified aggregate.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">DTPLACED : String
+    <br/>Date-time the order was placed.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">UNITS : String
+    <br/>Quantity of the security the open order is for.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">SUBACCT : String
+    <br/>Sub-account type. CASH, MARGIN, SHORT, OTHER.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>CASH</dd>
+            <dd>MARGIN</dd>
+            <dd>SHORT</dd>
+            <dd>OTHER</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">DURATION : String
+    <br/>How long the order is good for: DAY, GOODTILCANCEL, IMMEDIATE
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>DAY</dd>
+            <dd>GOODTILCANCEL</dd>
+            <dd>IMMEDIATE</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">RESTRICTION : String
+    <br/>Special restriction on the order: ALLORNONE, MINUNITS, NONE.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>ALLORNONE</dd>
+            <dd>MINUNITS</dd>
+            <dd>NONE</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">MINUNITS : String
+    <br/>Minimum number of units that must be filled for the order.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">LIMITPRICE : String
+    <br/>Limit price.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">STOPPRICE : String
+    <br/>Stop price.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">MEMO : String
+    <br/>Other information about order (at most one).
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">CURRENCY : Currency
+    <br/>Overriding currency aggregate.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">INV401KSOURCE : String
+    <br/>For 401(k) accounts, source of money for this order.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>PRETAX</dd>
+            <dd>AFTERTAX</dd>
+            <dd>MATCH</dd>
+            <dd>PROFITSHARING</dd>
+            <dd>ROLLOVER</dd>
+            <dd>OTHERVEST</dd>
+            <dd>OTHERNONVEST</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>

@@ -1,0 +1,140 @@
+
+<h2>InvestmentSell</h2>
+<ul class="parameter">
+  <li class="param-required-false">INVTRAN : InvestmentTransaction
+    <br/>Investment transaction aggregate.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">SECID : SecurityId
+    <br/>Security identifier.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">UNITS : String
+    <br/>For security-based actions other than stock splits.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">UNITPRICE : String
+    <br/>Price per commonly-quoted unit. Does not include markup/markdown.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">MARKDOWN : String
+    <br/>Portion of the unit price that is attributed to the dealer markdown.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">COMMISSION : String
+    <br/>Transaction commission.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">TAXES : String
+    <br/>Taxes on the trade.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">FEES : String
+    <br/>Fees applied to trade.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">LOAD : String
+    <br/>Load on the transaction.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">WITHHOLDING : String
+    <br/>Federal Tax withholdings.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">TAXEXEMPT : String
+    <br/>Tax-exempt transaction.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>Y</dd>
+            <dd>N</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">TOTAL : String
+    <br/>Transaction total.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">GAIN : String
+    <br/>For sales, total gain.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">CURRENCY : Currency
+    <br/>Overriding currency aggregate for unit price.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">ORIGCURRENCY : Currency
+    <br/>Details of the foreign currency.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">SUBACCTSEC : String
+    <br/>Sub-account type for the security: CASH, MARGIN, SHORT, OTHER.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>CASH</dd>
+            <dd>MARGIN</dd>
+            <dd>SHORT</dd>
+            <dd>OTHER</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">SUBACCTFUND : String
+    <br/>Where did the money for the transaction come from or go to? CASH, MARGIN, SHORT, OTHER.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>CASH</dd>
+            <dd>MARGIN</dd>
+            <dd>SHORT</dd>
+            <dd>OTHER</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">LOANID : String
+    <br/>For 401(k) accounts only. Indicates that the transaction was due to a loan or a loan repayment, and which loan it was.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">STATEWITHHOLDING : String
+    <br/>Used for withholdings for state taxes on a withdrawal.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">PENALTY : String
+    <br/>Indicates an amount withheld due to a penalty.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">INV401KSOURCE : String
+    <br/>For 401(k) accounts, source of money used for this security.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>PRETAX</dd>
+            <dd>AFTERTAX</dd>
+            <dd>MATCH</dd>
+            <dd>PROFITSHARING</dd>
+            <dd>ROLLOVER</dd>
+            <dd>OTHERVEST</dd>
+            <dd>OTHERNONVEST</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>

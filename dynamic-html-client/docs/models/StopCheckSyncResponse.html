@@ -1,0 +1,28 @@
+
+<h2>StopCheckSyncResponse</h2>
+<ul class="parameter">
+  <li class="param-required-false">TOKEN : String
+    <br/>New synchronization token.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">LOSTSYNC : String
+    <br/>if the token in the synchronization request is older than the earliest entry in the server’s history table. In this case, some responses have been lost. N if the token in the synchronization request is newer than or matches a token in the server’s history table.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>Y</dd>
+            <dd>N</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">BANKACCTFROM : BankAccount
+    <br/>Bank account of interest.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">STPCHKTRNRS : List
+    <br/>Stop-check transactions.
+  </li>
+</ul>

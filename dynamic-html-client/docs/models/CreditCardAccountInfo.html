@@ -1,0 +1,49 @@
+
+<h2>CreditCardAccountInfo</h2>
+<ul class="parameter">
+  <li class="param-required-false">CCACCTFROM : CreditCardAccount
+    <br/>Credit card account from aggregate.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">FIBANKACCTFROM : BankAccount
+    <br/>Bank account from aggregate.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">SUPTXDL : Boolean
+    <br/>Y if account supports transaction detail downloads, N if it is balance-only.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">XFERSRC : Boolean
+    <br/>Y if account is enabled as a source for an intrabank or interbank transfer.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">XFERDEST : Boolean
+    <br/>Y if account is enabled as a destination for an intrabank or interbank transfer.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">SVCSTATUS : String
+    <br/>Status of the account.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>AVAIL</dd>
+            <dd>PEND</dd>
+            <dd>ACTIVE</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">EEI.NICKNAME : String
+    <br/>EEI nick name field.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">EEI.LEDGERBAL : LedgerBalance
+    <br/>EEI ledger balance field.
+  </li>
+</ul>

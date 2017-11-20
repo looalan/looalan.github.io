@@ -1,0 +1,58 @@
+
+<h2>ImageData</h2>
+<ul class="parameter">
+  <li class="param-required-false">IMAGETYPE : String
+    <br/>Defines the type of image.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>STATEMENT</dd>
+            <dd>TRANSACTION</dd>
+            <dd>TAX</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">IMAGEREF : String
+    <br/>Server specified unique identifier for the image to be used during the request for the image. Can be either image identifier or URL, depending on the value of &lt;IMAGEREFTYPE&gt;.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">IMAGEREFTYPE : String
+    <br/>Type of reference.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>OPAQUE</dd>
+            <dd>URL</dd>
+            <dd>FORMURL</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">IMAGEDELAY : String
+    <br/>Number of calendar days from &lt;DTSERVER&gt; (for statement images) or &lt;DTPOSTED&gt; (for transaction images) when image will become available.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">DTIMAGEAVAIL : String
+    <br/>Image availability date.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">IMAGETTL : String
+    <br/>Number of calendar days the image will remain available on the host once the image becomes available.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">CHECKSUP : String
+    <br/>Check image information.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>FRONTONLY</dd>
+            <dd>BACKONLY</dd>
+            <dd>FRONTANDBACK</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>

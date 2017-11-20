@@ -1,0 +1,82 @@
+
+<h2>MessageSetCore</h2>
+<ul class="parameter">
+  <li class="param-required-false">VER : String
+    <br/>Version number of the message set, (for example, &lt;VER&gt;1 for version 1 of the message set).
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">URL : String
+    <br/>URL where messages in this set are to be sent.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">OFXSEC : String
+    <br/>Security level required for this message set.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>NONE</dd>
+            <dd>TYPE1</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">TRANSOSEC : String
+    <br/>Y if transport-level security must be used, N if not used.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>Y</dd>
+            <dd>N</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">SIGNONREALM : String
+    <br/>Signon realm to use with this message set.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">LANGUAGE : List
+    <br/>One or more supported Language. If more than one language is supported, multiple &lt;LANGUAGE&gt; elements can be sent.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">SYNCMODE : String
+    <br/>FULL for full synchronization capability. LITE for lite synchronization capability.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>FULL</dd>
+            <dd>LITE</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">REFRESHSUPT : String
+    <br/>Y if server supports &lt;REFRESH&gt;Y within synchronizations. This option is irrelevant for full synchronization servers. Clients must ignore &lt;REFRESHSUPT&gt; (or its absence) if the profile also specifies &lt;SYNCMODE&gt;FULL. For lite synchronization, the default is N. Without &lt;REFRESHSUPT&gt;Y, lite synchronization servers are not required to support &lt;REFRESH&gt;Y requests.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>Y</dd>
+            <dd>N</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">RESFILLER : String
+    <br/>Y if server supports file-based error recovery.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>Y</dd>
+            <dd>N</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">SPNAME : String
+    <br/>Service provider name. Some financial institutions out-source their OFX servers to a service provider. In such cases, the SPNAME element should be included in the MSGSETCORE.
+  </li>
+</ul>
